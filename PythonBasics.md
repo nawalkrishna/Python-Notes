@@ -63,7 +63,7 @@ eval() input; validate ranges.
 Common mistakes checklist: - Missing quotes for strings - Forgetting int()/float() before arithmetic
 - Shadowing built-ins like list or str - Not handling invalid input - Outdated comments
 
-############################################################################################################
+##########################################################################################################
 
 Type Casting in Python
 
@@ -125,4 +125,4 @@ Forgetting that int() truncates instead of rounding.
 
 Assuming bool(0.0) is True (it’s False because 0 is considered empty).
   
-#####################################################################################
+###############################################################################################
