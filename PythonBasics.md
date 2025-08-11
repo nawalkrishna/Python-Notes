@@ -18,7 +18,7 @@ Hello, World!
 
 ✅ Always use quotes & correct print().
 
-                                                ########################################################################################################################
+########################################################################################################################
 
 Comments, Variables, Datatypes, and User Inputs
 
@@ -63,7 +63,7 @@ eval() input; validate ranges.
 Common mistakes checklist: - Missing quotes for strings - Forgetting int()/float() before arithmetic
 - Shadowing built-ins like list or str - Not handling invalid input - Outdated comments
 
-                                                 #################################################################################################################
+#################################################################################################################
 
 
   
