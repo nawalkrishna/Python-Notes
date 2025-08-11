@@ -65,5 +65,64 @@ Common mistakes checklist: - Missing quotes for strings - Forgetting int()/float
 
 ############################################################################################################
 
+Type Casting in Python
 
+1. What is Type Casting?
+Type casting means converting a value from one data type to another.
+In Python, this is usually done using built-in functions like int(), float(), str(), etc.
+Since Python is dynamically typed, the variable’s type can change after reassignment.
+
+2. Types of Casting
+
+
+A. Implicit Type Casting (Type Conversion)
+
+Done automatically by Python.
+Usually happens when combining different numeric types.
+No data loss for safe conversions.
+Example:
+x = 5  # int
+y = 2.5  # float
+z = x + y  # int + float → float
+Now z is 7.5 (float).
+
+B. Explicit Type Casting
+
+Done manually using casting functions.
+You control the conversion.
+Can lead to data loss if not careful.
+
+3. Common Casting Functions
+
+int(x) → Converts to integer.
+Floats are truncated (no rounding): int(3.9) → 3
+Strings must contain valid integers: int("10") → 10
+float(x) → Converts to float.
+Example: float(3) → 3.0
+str(x) → Converts to string.
+Example: str(123) → "123"
+bool(x) → Converts to Boolean.
+Empty values (0, "", [], None) → False
+Others → True
+list(x) → Converts to list.
+Example: list("abc") → ['a', 'b', 'c']
+
+tuple(x), set(x), dict(x) → Convert to other collections (must have compatible structure).
+
+4. Practical Examples
+
+age_str = "25"
+age_int = int(age_str) # "25" → 25
+price = 99
+price_str = str(price) # 99 → "99"
+marks = 85.6
+marks_int = int(marks) # 85.6 → 85 (truncated)
+
+Common Mistakes
+Trying to convert invalid strings: int("abc") → ValueError
+
+Forgetting that int() truncates instead of rounding.
+
+Assuming bool(0.0) is True (it’s False because 0 is considered empty).
   
+#####################################################################################
